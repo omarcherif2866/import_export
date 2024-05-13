@@ -1,0 +1,76 @@
+.containerrr {
+    display: flex;
+    flex-direction: column; /* Empile les blocs les uns sur les autres */
+  }
+  
+  .block {
+    width: 100%; /* Largeur à 100% pour chaque bloc */
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-left,
+  .image-right {
+    width: 40%;
+    margin-right: 20px; /* Espacement à droite de l'image */
+    margin-left: 10px; /* Espacement à droite de l'image */
+
+  }
+  
+  .text-left,
+  .text-right {
+    width: 55%;
+  }
+  
+  .image-left img,
+  .image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
+  
+  /* Pour rendre le layout responsive */
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Afficher les éléments en colonne */
+    }
+  
+    .image-left,
+    .image-right {
+      width: 100%; /* Largeur à 100% pour occuper toute la largeur */
+      margin-right: 0; /* Supprimer la marge */
+      margin-left: 0; /* Supprimer la marge */
+      margin-bottom: 20px; /* Ajouter un espace en bas pour séparer les éléments */
+    }
+  
+    .text-left,
+    .text-right {
+      width: 100%; /* Largeur à 100% pour occuper toute la largeur */
+    }
+  
+    .image-left {
+      order: 2; /* Changer l'ordre pour afficher l'image après le texte */
+    }
+  
+    /* Ajouter un effet de survol sur tout le bloc */
+    .block:hover {
+      transform: scale(1.1); /* Zoom de 10% */
+      transition: transform 0.3s ease; /* Animation fluide */
+    }
+  
+    /* Ajouter un effet de survol sur l'image à l'intérieur du bloc */
+    .block:hover img {
+      opacity: 0.7; /* Réduire l'opacité de l'image */
+    }
+  
+    /* Ajouter un effet de survol sur le texte à l'intérieur du bloc */
+    .block:hover p {
+      color: #ff0000; /* Changer la couleur du texte */
+    }
+  }
+  
+  

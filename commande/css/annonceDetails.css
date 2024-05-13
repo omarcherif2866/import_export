@@ -1,0 +1,6 @@
+.bio-text {
+    max-width: 400px; /* Définissez la largeur maximale souhaitée */
+    margin: 0 auto; /* Pour centrer le texte horizontalement */
+    overflow-wrap: break-word; /* Pour couper les mots longs */
+  }
+  

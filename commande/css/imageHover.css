@@ -1,0 +1,48 @@
+.containerrr {
+    position: relative;
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+    display: inline-block; /* Afficher les éléments en ligne */
+    margin-right: 2%; /* Espacement entre les éléments */
+    vertical-align: top; /* Alignement vertical */
+    height: 250px; /* Définir une hauteur fixe pour chaque élément */
+    overflow: hidden; /* Cacher le contenu supplémentaire si nécessaire */
+    text-align: center; /* Centrer le texte horizontalement */
+    border: 2px solid #000; /* Ajouter une bordure */
+    background-color: rgba(240, 240, 79, 0.605); /* Arrière-plan jaune par défaut */
+    color: black; /* Couleur du texte noire */
+    transition: background-color 0.5s, color 0.5s; /* Transition pour l'effet hover */
+    border-radius: 13%;
+  }
+  
+  .middleee {
+    position: absolute;
+    top: 50%; /* Centrer verticalement */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer verticalement et horizontalement */
+    width: 90%; /* Ajustez la largeur du texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box; /* Inclure le rembourrage dans la largeur totale */
+  }
+  
+  
+  /* Modifier la couleur de fond et la couleur du texte au survol */
+  .containerrr:hover {
+    background: linear-gradient(135deg, #ff8c00, #ffff00);
+    color: white;
+  }
+  
+  /* Modifier la couleur de fond du texte au survol */
+  .containerrr:hover .middleee {
+    background-color: rgba(0, 0, 0, 0.7); /* Arrière-plan semi-transparent plus foncé au survol */
+  }
+
+  .containerrr h5 {
+    color: #000; /* Couleur du texte noire par défaut */
+  }
+  
+  
+
+
+  
